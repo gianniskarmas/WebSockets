@@ -1,0 +1,89 @@
+/* HTML */
+
+.waf-tableview table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.waf-tableview table thead,
+.waf-tableview table tbody,
+.waf-tableview table tfoot,
+.waf-tableview table tr,
+.waf-tableview table th,
+.waf-tableview table td {
+  border-width: 0;
+  border-style: inherit;
+  border-color: inherit;
+}
+
+/* THEME */
+
+.waf-tableview table {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue", helvetica, "Myriad Pro", Myriad, sans-serif;
+  font-size: 14px;
+}
+
+.waf-tableview table thead th,
+.waf-tableview table tfoot td {
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.waf-tableview table tr + tr {
+  border-top-width: 1px;
+}
+
+.waf-tableview table th,
+.waf-tableview table td {
+  padding: 14px;
+  text-align: center;
+  border-width: 1px;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+.waf-tableview table tr.selected {
+  background-color:#009fc7;
+}
+
+.waf-tableview table .waf-state-loading .waf-skin-spinner {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 3em;
+  height: 3em;
+  font-size: 14px;
+  -webkit-animation: waf-kf-spin 1.3s infinite alternate;
+  animation: waf-kf-spin 1.3s infinite alternate;
+  border-width: 0.3em;
+  border-style: solid;
+  border-color: #48bad6 #48bad6 rgba(0, 0, 0, 0.05) rgba(0, 0, 0, 0.05);
+  border-radius: 1000px;
+  display:block;
+}
+@-webkit-keyframes waf-kf-spin {
+  to {
+    -webkit-transform: rotate(2turn);
+    transform: rotate(2turn);
+  }
+}
+@keyframes waf-kf-spin {
+  to {
+    -webkit-transform: rotate(2turn);
+    transform: rotate(2turn);
+  }
+}
+
+table.waf-tableview .paginationText {
+	width: 35px;
+	text-align: right;
+	
+}
