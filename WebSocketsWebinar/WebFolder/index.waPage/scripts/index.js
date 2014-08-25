@@ -6,8 +6,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	var sendButton = {};	// @button
 	var changeUsernameButton = {};	// @button
 // @endregion// @endlock
-	//var ws = new WebSocket("ws://ks27964.kimsufi.com:8081/chat");
-	var ws = new WebSocket("ws://localhost:8081/chat");
+	var ws = new WebSocket("ws://ks27964.kimsufi.com:8081/chat");
+	//var ws = new WebSocket("ws://localhost:8081/chat");
 	var username = "";
 	
 	ws.onmessage = function(message){
