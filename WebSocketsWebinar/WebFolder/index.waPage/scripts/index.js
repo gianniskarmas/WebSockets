@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var messageInput = {};	// @textField
 	var slider1 = {};	// @slider
 	var sendButton = {};	// @button
 	var changeUsernameButton = {};	// @button
@@ -33,6 +34,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 // eventHandlers// @lock
 
+	messageInput.keydown = function messageInput_keydown (event)// @startlock
+	{// @endlock
+		// Add your code here
+	};// @lock
+
 	slider1.slide = function slider1_slide (event)// @startlock
 	{// @endlock
 		//$$('messageInput').setWidth($$('slider1').getValue());
@@ -61,6 +67,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("messageInput", "keydown", messageInput.keydown, "WAF");
 	WAF.addListener("slider1", "slide", slider1.slide, "WAF");
 	WAF.addListener("sendButton", "click", sendButton.click, "WAF");
 	WAF.addListener("changeUsernameButton", "click", changeUsernameButton.click, "WAF");
