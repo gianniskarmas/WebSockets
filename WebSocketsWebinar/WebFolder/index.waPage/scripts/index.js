@@ -36,7 +36,14 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	messageInput.keydown = function messageInput_keydown (event)// @startlock
 	{// @endlock
-		// Add your code here
+		if (event.keycode == 13){
+			ws.send(JSON.stringify({
+				username: username,
+				type: "message",
+				body: $$('messageInput').getValue()	
+			}));
+			$$('messageInput').setValue("");
+		}
 	};// @lock
 
 	slider1.slide = function slider1_slide (event)// @startlock
@@ -55,6 +62,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			type: "message",
 			body: $$('messageInput').getValue()
 		}));
+		$$('messageInput').setValue("");
 	};// @lock
 
 	changeUsernameButton.click = function changeUsernameButton_click (event)// @startlock
