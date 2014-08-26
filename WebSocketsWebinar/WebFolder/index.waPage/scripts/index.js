@@ -27,6 +27,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 		}
 	};
+	ws.onclose = function() { // when the socket is closed
+		
+    };
+
 // eventHandlers// @lock
 
 	slider1.slide = function slider1_slide (event)// @startlock

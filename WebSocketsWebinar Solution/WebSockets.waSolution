@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?><solution>
 	<project path="../WebSocketsWebinar/WebSockets.waProject"/>
+	<project path="../WineVine/WineVine.waProject"/>
 	<file path="./Settings.waSettings">
 		<tag name="settings"/>
 	</file>

@@ -1,0 +1,983 @@
+/*
+* This file is part of Wakanda software, licensed by 4D under
+*  (i) the GNU General Public License version 3 (GNU GPL v3), or
+*  (ii) the Affero General Public License version 3 (AGPL v3) or
+*  (iii) a commercial license.
+* This file remains the exclusive property of 4D and/or its licensors
+* and is protected by national and international legislations.
+* In any event, Licensee's compliance with the terms and conditions
+* of the applicable license constitutes a prerequisite to any use of this file.
+* Except as otherwise expressly stated in the applicable license,
+* such license does not include any other license or rights on this file,
+* 4D's and/or its licensors' trademarks and/or other proprietary rights.
+* Consequently, no title, copyright or other proprietary rights
+* other than those specified in the applicable license is granted.
+*/
+.waf-theme.wakanda_mobile .waf-widget-header,
+.waf-theme.wakanda_mobile .waf-container.waf-widget-header {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #979797;
+  color: #ffffff;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+  outline: 1px solid #777777;
+  border-bottom-width: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.waf-theme.wakanda_mobile .waf-widget-footer,
+.waf-theme.wakanda_mobile .waf-container.waf-widget-footer {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #979797;
+  color: #ffffff;
+  outline: 1px solid #777777;
+  border-bottom-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-button {
+  border-width: 0;
+  border-style: solid;
+  border-color: #10100f;
+  border-radius: 3px;
+  background-color: #1d1d1b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1d1b), to(#030302));
+  background-image: -webkit-linear-gradient(top, #1d1d1b 0%, #030302 100%);
+  background-image: -moz-linear-gradient(top, #1d1d1b 0%, #030302 100%);
+  background-image: linear-gradient(to bottom, #1d1d1b 0%, #030302 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1d1d1b', endColorstr='#ff030302', GradientType=0);
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-size: 14px;
+  padding: 0;
+}
+.waf-theme.wakanda_mobile .waf-button.waf-state-hover {
+  border-color: #282827;
+  background-color: #343432;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#343432), to(#1c1c1c));
+  background-image: -webkit-linear-gradient(top, #343432 0%, #1c1c1c 100%);
+  background-image: -moz-linear-gradient(top, #343432 0%, #1c1c1c 100%);
+  background-image: linear-gradient(to bottom, #343432 0%, #1c1c1c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff343432', endColorstr='#ff1c1c1c', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-button.waf-role-success {
+  border-color: #6f9b0c;
+  background-color: #80b30e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#80b30e), to(#5e840a));
+  background-image: -webkit-linear-gradient(top, #80b30e 0%, #5e840a 100%);
+  background-image: -moz-linear-gradient(top, #80b30e 0%, #5e840a 100%);
+  background-image: linear-gradient(to bottom, #80b30e 0%, #5e840a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff80b30e', endColorstr='#ff5e840a', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-button.waf-role-success.waf-state-hover {
+  border-color: #7da524;
+  background-color: #8dbb26;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8dbb26), to(#6e9023));
+  background-image: -webkit-linear-gradient(top, #8dbb26 0%, #6e9023 100%);
+  background-image: -moz-linear-gradient(top, #8dbb26 0%, #6e9023 100%);
+  background-image: linear-gradient(to bottom, #8dbb26 0%, #6e9023 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8dbb26', endColorstr='#ff6e9023', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-button.waf-role-warning {
+  border-color: #ea4910;
+  background-color: #f05924;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f05924), to(#d3410e));
+  background-image: -webkit-linear-gradient(top, #f05924 0%, #d3410e 100%);
+  background-image: -moz-linear-gradient(top, #f05924 0%, #d3410e 100%);
+  background-image: linear-gradient(to bottom, #f05924 0%, #d3410e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff05924', endColorstr='#ffd3410e', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-button.waf-role-warning.waf-state-hover {
+  border-color: #ec5b28;
+  background-color: #f26a3a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f26a3a), to(#d75426));
+  background-image: -webkit-linear-gradient(top, #f26a3a 0%, #d75426 100%);
+  background-image: -moz-linear-gradient(top, #f26a3a 0%, #d75426 100%);
+  background-image: linear-gradient(to bottom, #f26a3a 0%, #d75426 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff26a3a', endColorstr='#ffd75426', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-button.waf-role-danger {
+  border-color: #e81311;
+  background-color: #ef2523;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ef2523), to(#d0110f));
+  background-image: -webkit-linear-gradient(top, #ef2523 0%, #d0110f 100%);
+  background-image: -moz-linear-gradient(top, #ef2523 0%, #d0110f 100%);
+  background-image: linear-gradient(to bottom, #ef2523 0%, #d0110f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffef2523', endColorstr='#ffd0110f', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-button.waf-role-danger.waf-state-hover {
+  border-color: #ea2b29;
+  background-color: #f13b39;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f13b39), to(#d52927));
+  background-image: -webkit-linear-gradient(top, #f13b39 0%, #d52927 100%);
+  background-image: -moz-linear-gradient(top, #f13b39 0%, #d52927 100%);
+  background-image: linear-gradient(to bottom, #f13b39 0%, #d52927 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff13b39', endColorstr='#ffd52927', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-button.waf-role-info {
+  border-color: #33b2d1;
+  background-color: #48bad6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#48bad6), to(#2ba3c0));
+  background-image: -webkit-linear-gradient(top, #48bad6 0%, #2ba3c0 100%);
+  background-image: -moz-linear-gradient(top, #48bad6 0%, #2ba3c0 100%);
+  background-image: linear-gradient(to bottom, #48bad6 0%, #2ba3c0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff48bad6', endColorstr='#ff2ba3c0', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-button.waf-role-info.waf-state-hover {
+  border-color: #48bad6;
+  background-color: #5ac1da;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5ac1da), to(#40acc6));
+  background-image: -webkit-linear-gradient(top, #5ac1da 0%, #40acc6 100%);
+  background-image: -moz-linear-gradient(top, #5ac1da 0%, #40acc6 100%);
+  background-image: linear-gradient(to bottom, #5ac1da 0%, #40acc6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5ac1da', endColorstr='#ff40acc6', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-buttonImage {
+  border-width: 0;
+  border-style: solid;
+  border-color: #10100f;
+  border-radius: 3px;
+  background-color: #1d1d1b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1d1b), to(#030302));
+  background-image: -webkit-linear-gradient(top, #1d1d1b 0%, #030302 100%);
+  background-image: -moz-linear-gradient(top, #1d1d1b 0%, #030302 100%);
+  background-image: linear-gradient(to bottom, #1d1d1b 0%, #030302 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1d1d1b', endColorstr='#ff030302', GradientType=0);
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-size: 14px;
+}
+.waf-theme.wakanda_mobile .waf-buttonImage.waf-state-hover {
+  border-color: #282827;
+  background-color: #343432;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#343432), to(#1c1c1c));
+  background-image: -webkit-linear-gradient(top, #343432 0%, #1c1c1c 100%);
+  background-image: -moz-linear-gradient(top, #343432 0%, #1c1c1c 100%);
+  background-image: linear-gradient(to bottom, #343432 0%, #1c1c1c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff343432', endColorstr='#ff1c1c1c', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-buttonImage.waf-role-success {
+  border-color: #6f9b0c;
+  background-color: #80b30e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#80b30e), to(#5e840a));
+  background-image: -webkit-linear-gradient(top, #80b30e 0%, #5e840a 100%);
+  background-image: -moz-linear-gradient(top, #80b30e 0%, #5e840a 100%);
+  background-image: linear-gradient(to bottom, #80b30e 0%, #5e840a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff80b30e', endColorstr='#ff5e840a', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-buttonImage.waf-role-success.waf-state-hover {
+  border-color: #7da524;
+  background-color: #8dbb26;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8dbb26), to(#6e9023));
+  background-image: -webkit-linear-gradient(top, #8dbb26 0%, #6e9023 100%);
+  background-image: -moz-linear-gradient(top, #8dbb26 0%, #6e9023 100%);
+  background-image: linear-gradient(to bottom, #8dbb26 0%, #6e9023 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8dbb26', endColorstr='#ff6e9023', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-buttonImage.waf-role-warning {
+  border-color: #ea4910;
+  background-color: #f05924;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f05924), to(#d3410e));
+  background-image: -webkit-linear-gradient(top, #f05924 0%, #d3410e 100%);
+  background-image: -moz-linear-gradient(top, #f05924 0%, #d3410e 100%);
+  background-image: linear-gradient(to bottom, #f05924 0%, #d3410e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff05924', endColorstr='#ffd3410e', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-buttonImage.waf-role-warning.waf-state-hover {
+  border-color: #ec5b28;
+  background-color: #f26a3a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f26a3a), to(#d75426));
+  background-image: -webkit-linear-gradient(top, #f26a3a 0%, #d75426 100%);
+  background-image: -moz-linear-gradient(top, #f26a3a 0%, #d75426 100%);
+  background-image: linear-gradient(to bottom, #f26a3a 0%, #d75426 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff26a3a', endColorstr='#ffd75426', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-buttonImage.waf-role-danger {
+  border-color: #e81311;
+  background-color: #ef2523;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ef2523), to(#d0110f));
+  background-image: -webkit-linear-gradient(top, #ef2523 0%, #d0110f 100%);
+  background-image: -moz-linear-gradient(top, #ef2523 0%, #d0110f 100%);
+  background-image: linear-gradient(to bottom, #ef2523 0%, #d0110f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffef2523', endColorstr='#ffd0110f', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-buttonImage.waf-role-danger.waf-state-hover {
+  border-color: #ea2b29;
+  background-color: #f13b39;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f13b39), to(#d52927));
+  background-image: -webkit-linear-gradient(top, #f13b39 0%, #d52927 100%);
+  background-image: -moz-linear-gradient(top, #f13b39 0%, #d52927 100%);
+  background-image: linear-gradient(to bottom, #f13b39 0%, #d52927 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff13b39', endColorstr='#ffd52927', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-buttonImage.waf-role-info {
+  border-color: #33b2d1;
+  background-color: #48bad6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#48bad6), to(#2ba3c0));
+  background-image: -webkit-linear-gradient(top, #48bad6 0%, #2ba3c0 100%);
+  background-image: -moz-linear-gradient(top, #48bad6 0%, #2ba3c0 100%);
+  background-image: linear-gradient(to bottom, #48bad6 0%, #2ba3c0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff48bad6', endColorstr='#ff2ba3c0', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-buttonImage.waf-role-info.waf-state-hover {
+  border-color: #48bad6;
+  background-color: #5ac1da;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5ac1da), to(#40acc6));
+  background-image: -webkit-linear-gradient(top, #5ac1da 0%, #40acc6 100%);
+  background-image: -moz-linear-gradient(top, #5ac1da 0%, #40acc6 100%);
+  background-image: linear-gradient(to bottom, #5ac1da 0%, #40acc6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5ac1da', endColorstr='#ff40acc6', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-canvas {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-container {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-dataGrid {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-dataGrid .waf-dataGrid-header {
+  background-color: #979797;
+  color: #ffffff;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+  outline: 1px solid #777777;
+  border-bottom-width: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.waf-theme.wakanda_mobile .waf-dataGrid .waf-dataGrid-footer {
+  background-color: #979797;
+  color: #ffffff;
+  outline: 1px solid #777777;
+  border-bottom-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-dataGrid .waf-dataGrid-row {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #cfcfcf;
+}
+.waf-theme.wakanda_mobile .waf-frame {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-listView {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+}
+.waf-theme.wakanda_mobile .waf-listView .waf-container {
+  border-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-listView .waf-list-row {
+  border-width: 1px 0 0 0;
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-matrix .waf-matrix-element {
+  -webkit-transition: border 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  -moz-transition: border 0.2s ease-in-out, background-image 0.2s ease-in-out, -moz-box-shadow 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out, background-image 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.waf-theme.wakanda_mobile .waf-menuBar {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #777777;
+  border-radius: 3px;
+  background-color: #979797;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+}
+.waf-theme.wakanda_mobile .waf-menuItem.waf-state-hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.waf-theme.wakanda_mobile .waf-menuItem.waf-state-selected {
+  background-color: #ffffff;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2) inset;
+}
+.waf-theme.wakanda_mobile .waf-navigationView .waf-navigationView-content {
+  border-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-navigationView .waf-navigationView-content .waf-navigationView-view {
+  border-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-navigationView .waf-navigationView-content .waf-navigationView-view .waf-navigationView-header {
+  border-width: 0;
+  background-color: #343434;
+  box-shadow: none;
+}
+.waf-theme.wakanda_mobile .waf-navigationView .waf-navigationView-content .waf-navigationView-view .waf-navigationView-header .waf-navigationView-title {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.waf-theme.wakanda_mobile .waf-navigationView .waf-navigationView-content .waf-navigationView-view .waf-navigationView-header .waf-navigationView-title::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  vertical-align: middle;
+}
+.waf-theme.wakanda_mobile .waf-navigationView .waf-navigationView-footer {
+  border-width: 0;
+  outline-width: 0;
+  background-color: #343434;
+}
+.waf-theme.wakanda_mobile .waf-navigationView .waf-navigationView-content .waf-navigationView-view .waf-navigationView-title {
+  font-weight: normal;
+}
+.waf-theme.wakanda_mobile .waf-popover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+}
+.waf-theme.wakanda_mobile .waf-popover .waf-popover-header {
+  background-color: #343434;
+  font-size: 16px;
+  font-weight: bold;
+}
+.waf-theme.wakanda_mobile .waf-popover .waf-popover-footer {
+  background-color: #343434;
+}
+.waf-theme.wakanda_mobile .waf-popover .waf-popover-header {
+  border: 0;
+  outline: 1px solid #343434;
+}
+.waf-theme.wakanda_mobile .waf-popover .waf-popover-footer {
+  border: 0;
+  outline: 1px solid #343434;
+}
+.waf-theme.wakanda_mobile .waf-popover .waf-popover-body {
+  border: 0;
+}
+.waf-theme.wakanda_mobile .waf-progressBar {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-progressBar .waf-progressBar-range {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 5px;
+  background-color: #48bad6;
+  box-shadow: 0 0 0 1px #185c6d inset;
+}
+.waf-theme.wakanda_mobile .waf-radioGroup .waf-radio {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-radius: 0;
+  background-color: #ffffff;
+  -webkit-tap-highlight-color: transparent;
+}
+.waf-theme.wakanda_mobile .waf-radioGroup .waf-radio .waf-radio-box {
+  visibility: hidden;
+}
+.waf-theme.wakanda_mobile .waf-radioGroup .waf-radio.waf-state-selected .waf-radio-box {
+  visibility: visible;
+}
+.waf-theme.wakanda_mobile .waf-radioGroup.waf-direction-vertical .waf-radio:not(.waf-position-first) {
+  border-top-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-radioGroup.waf-direction-vertical .waf-radio.waf-position-first {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.waf-theme.wakanda_mobile .waf-radioGroup.waf-direction-vertical .waf-radio.waf-position-last {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.waf-theme.wakanda_mobile .waf-radioGroup.waf-direction-horizontal .waf-radio:not(.waf-position-first) {
+  border-left-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-radioGroup.waf-direction-horizontal .waf-radio.waf-position-first {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.waf-theme.wakanda_mobile .waf-radioGroup.waf-direction-horizontal .waf-radio.waf-position-last {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.waf-theme.wakanda_mobile .waf-section {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+}
+.waf-theme.wakanda_mobile .waf-section > .waf-container {
+  border-width: 0 0 1px 0;
+}
+.waf-theme.wakanda_mobile .waf-section .waf-container:not(.waf-section-blank) .waf-richText {
+  line-height: 38px;
+}
+.waf-theme.wakanda_mobile .waf-section .waf-section-input .waf-textField {
+  box-shadow: none;
+  border-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-select {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+}
+.waf-theme.wakanda_mobile .waf-slider {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-radius: 3px;
+}
+.waf-theme.wakanda_mobile .waf-slider .ui-slider-handle {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #185c6d;
+  border-radius: 1000px;
+  background-image: none;
+  background-color: #48bad6;
+}
+.waf-theme.wakanda_mobile .waf-splitView > .waf-container {
+  border-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-switchbox {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-radius: 1000px;
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-switchbox .waf-switchbox-switch {
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 1000px;
+  background-color: #48bad6;
+  background-clip: content-box;
+  box-shadow: 0 0 0 1px #185c6d inset;
+}
+.waf-theme.wakanda_mobile .waf-tabView .waf-tabView-menuBar {
+  border-radius: inherit;
+}
+.waf-theme.wakanda_mobile .waf-tabView .waf-container {
+  border-radius: inherit;
+}
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-top-left > .waf-tabView-menuBar,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-top-right > .waf-tabView-menuBar {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-top-left > .waf-container,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-top-right > .waf-container {
+  border-top-width: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-bottom-left > .waf-tabView-menuBar,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-bottom-right > .waf-tabView-menuBar {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-bottom-left > .waf-container,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-bottom-right > .waf-container {
+  border-bottom-width: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-left-top > .waf-tabView-menuBar,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-left-bottom > .waf-tabView-menuBar {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-left-top > .waf-container,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-left-bottom > .waf-container {
+  border-left-width: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-right-top > .waf-tabView-menuBar,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-right-bottom > .waf-tabView-menuBar {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-right-top > .waf-container,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-right-bottom > .waf-container {
+  border-right-width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-top-left > .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-top-right > .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-bottom-left > .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-bottom-right > .waf-tabView-menuBar .waf-menuItem {
+  height: 100% !important;
+}
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-left-top > .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-left-bottom > .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-right-top > .waf-tabView-menuBar .waf-menuItem,
+.waf-theme.wakanda_mobile .waf-tabView.waf-tabView-menu-position-right-bottom > .waf-tabView-menuBar .waf-menuItem {
+  width: 100% !important;
+}
+.waf-theme.wakanda_mobile .waf-tabView .waf-tabView-menuBar .waf-menuItem.waf-state-selected {
+  box-shadow: none;
+}
+.waf-theme.wakanda_mobile .waf-textField {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2) inset;
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-size: 14px;
+}
+.waf-theme.wakanda_mobile .waf-video {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile {
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile {
+  line-height: 1.4;
+  font-family: "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+.waf-theme.wakanda_mobile h1,
+.waf-theme.wakanda_mobile h2,
+.waf-theme.wakanda_mobile h3,
+.waf-theme.wakanda_mobile h4,
+.waf-theme.wakanda_mobile h5,
+.waf-theme.wakanda_mobile h6 {
+  line-height: 1.4;
+}
+.waf-theme.wakanda_mobile h1,
+.waf-theme.wakanda_mobile h2,
+.waf-theme.wakanda_mobile h3 {
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+.waf-theme.wakanda_mobile h4,
+.waf-theme.wakanda_mobile h5,
+.waf-theme.wakanda_mobile h6 {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.waf-theme.wakanda_mobile h1 {
+  font-family: "Myriad Pro", Myriad, Arial, Verdana, sans-serif;
+  font-size: 40px;
+}
+.waf-theme.wakanda_mobile h2 {
+  font-family: "Myriad Pro", Myriad, Arial, Verdana, sans-serif;
+  font-size: 34px;
+}
+.waf-theme.wakanda_mobile h3 {
+  font-family: "Myriad Pro", Myriad, Arial, Verdana, sans-serif;
+  font-size: 28px;
+}
+.waf-theme.wakanda_mobile h4 {
+  font-family: "Myriad Pro", Myriad, Arial, Verdana, sans-serif;
+  font-size: 23px;
+}
+.waf-theme.wakanda_mobile h5 {
+  font-family: "Myriad Pro", Myriad, Arial, Verdana, sans-serif;
+  font-size: 20px;
+}
+.waf-theme.wakanda_mobile h6 {
+  font-family: "Myriad Pro", Myriad, Arial, Verdana, sans-serif;
+  font-size: 17px;
+}
+.waf-theme.wakanda_mobile p {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.waf-theme.wakanda_mobile a {
+  color: #000000;
+}
+.waf-theme.wakanda_mobile .waf-skin-textHeaders {
+  font-size: 16px;
+  font-weight: bold;
+}
+.waf-theme.wakanda_mobile .waf-skin-input,
+.waf-theme.wakanda_mobile input[type="text"],
+.waf-theme.wakanda_mobile input[type="search"],
+.waf-theme.wakanda_mobile textarea {
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2) inset;
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-size: 14px;
+}
+.waf-theme.wakanda_mobile .waf-skin-button,
+.waf-theme.wakanda_mobile input[type="submit"],
+.waf-theme.wakanda_mobile button {
+  padding: 10px;
+  border-width: 0;
+  border-style: solid;
+  border-color: #10100f;
+  border-radius: 3px;
+  background-color: #1d1d1b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1d1b), to(#030302));
+  background-image: -webkit-linear-gradient(top, #1d1d1b 0%, #030302 100%);
+  background-image: -moz-linear-gradient(top, #1d1d1b 0%, #030302 100%);
+  background-image: linear-gradient(to bottom, #1d1d1b 0%, #030302 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1d1d1b', endColorstr='#ff030302', GradientType=0);
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-size: 14px;
+}
+.waf-theme.wakanda_mobile .waf-skin-button:not(.waf-button):hover,
+.waf-theme.wakanda_mobile input[type="submit"]:not(.waf-button):hover,
+.waf-theme.wakanda_mobile button:not(.waf-button):hover {
+  border-color: #282827;
+  background-color: #343432;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#343432), to(#1c1c1c));
+  background-image: -webkit-linear-gradient(top, #343432 0%, #1c1c1c 100%);
+  background-image: -moz-linear-gradient(top, #343432 0%, #1c1c1c 100%);
+  background-image: linear-gradient(to bottom, #343432 0%, #1c1c1c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff343432', endColorstr='#ff1c1c1c', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-skin-button.waf-skin-buttonSuccess,
+.waf-theme.wakanda_mobile input[type="submit"].waf-skin-buttonSuccess,
+.waf-theme.wakanda_mobile button.waf-skin-buttonSuccess {
+  border-color: #6f9b0c;
+  background-color: #80b30e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#80b30e), to(#5e840a));
+  background-image: -webkit-linear-gradient(top, #80b30e 0%, #5e840a 100%);
+  background-image: -moz-linear-gradient(top, #80b30e 0%, #5e840a 100%);
+  background-image: linear-gradient(to bottom, #80b30e 0%, #5e840a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff80b30e', endColorstr='#ff5e840a', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-skin-button.waf-skin-buttonSuccess:not(.waf-button):hover,
+.waf-theme.wakanda_mobile input[type="submit"].waf-skin-buttonSuccess:not(.waf-button):hover,
+.waf-theme.wakanda_mobile button.waf-skin-buttonSuccess:not(.waf-button):hover {
+  border-color: #7da524;
+  background-color: #8dbb26;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8dbb26), to(#6e9023));
+  background-image: -webkit-linear-gradient(top, #8dbb26 0%, #6e9023 100%);
+  background-image: -moz-linear-gradient(top, #8dbb26 0%, #6e9023 100%);
+  background-image: linear-gradient(to bottom, #8dbb26 0%, #6e9023 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8dbb26', endColorstr='#ff6e9023', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-skin-button.waf-skin-buttonWarning,
+.waf-theme.wakanda_mobile input[type="submit"].waf-skin-buttonWarning,
+.waf-theme.wakanda_mobile button.waf-skin-buttonWarning {
+  border-color: #ea4910;
+  background-color: #f05924;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f05924), to(#d3410e));
+  background-image: -webkit-linear-gradient(top, #f05924 0%, #d3410e 100%);
+  background-image: -moz-linear-gradient(top, #f05924 0%, #d3410e 100%);
+  background-image: linear-gradient(to bottom, #f05924 0%, #d3410e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff05924', endColorstr='#ffd3410e', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-skin-button.waf-skin-buttonWarning:not(.waf-button):hover,
+.waf-theme.wakanda_mobile input[type="submit"].waf-skin-buttonWarning:not(.waf-button):hover,
+.waf-theme.wakanda_mobile button.waf-skin-buttonWarning:not(.waf-button):hover {
+  border-color: #ec5b28;
+  background-color: #f26a3a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f26a3a), to(#d75426));
+  background-image: -webkit-linear-gradient(top, #f26a3a 0%, #d75426 100%);
+  background-image: -moz-linear-gradient(top, #f26a3a 0%, #d75426 100%);
+  background-image: linear-gradient(to bottom, #f26a3a 0%, #d75426 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff26a3a', endColorstr='#ffd75426', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-skin-button.waf-skin-buttonDanger,
+.waf-theme.wakanda_mobile input[type="submit"].waf-skin-buttonDanger,
+.waf-theme.wakanda_mobile button.waf-skin-buttonDanger {
+  border-color: #e81311;
+  background-color: #ef2523;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ef2523), to(#d0110f));
+  background-image: -webkit-linear-gradient(top, #ef2523 0%, #d0110f 100%);
+  background-image: -moz-linear-gradient(top, #ef2523 0%, #d0110f 100%);
+  background-image: linear-gradient(to bottom, #ef2523 0%, #d0110f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffef2523', endColorstr='#ffd0110f', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-skin-button.waf-skin-buttonDanger:not(.waf-button):hover,
+.waf-theme.wakanda_mobile input[type="submit"].waf-skin-buttonDanger:not(.waf-button):hover,
+.waf-theme.wakanda_mobile button.waf-skin-buttonDanger:not(.waf-button):hover {
+  border-color: #ea2b29;
+  background-color: #f13b39;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f13b39), to(#d52927));
+  background-image: -webkit-linear-gradient(top, #f13b39 0%, #d52927 100%);
+  background-image: -moz-linear-gradient(top, #f13b39 0%, #d52927 100%);
+  background-image: linear-gradient(to bottom, #f13b39 0%, #d52927 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff13b39', endColorstr='#ffd52927', GradientType=0);
+}
+.waf-theme.wakanda_mobile .waf-skin-button.waf-skin-buttonInfo,
+.waf-theme.wakanda_mobile input[type="submit"].waf-skin-buttonInfo,
+.waf-theme.wakanda_mobile button.waf-skin-buttonInfo {
+  border-color: #33b2d1;
+  background-color: #48bad6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#48bad6), to(#2ba3c0));
+  background-image: -webkit-linear-gradient(top, #48bad6 0%, #2ba3c0 100%);
+  background-image: -moz-linear-gradient(top, #48bad6 0%, #2ba3c0 100%);
+  background-image: linear-gradient(to bottom, #48bad6 0%, #2ba3c0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff48bad6', endColorstr='#ff2ba3c0', GradientType=0);
+  color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-skin-button.waf-skin-buttonInfo:not(.waf-button):hover,
+.waf-theme.wakanda_mobile input[type="submit"].waf-skin-buttonInfo:not(.waf-button):hover,
+.waf-theme.wakanda_mobile button.waf-skin-buttonInfo:not(.waf-button):hover {
+  border-color: #48bad6;
+  background-color: #5ac1da;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5ac1da), to(#40acc6));
+  background-image: -webkit-linear-gradient(top, #5ac1da 0%, #40acc6 100%);
+  background-image: -moz-linear-gradient(top, #5ac1da 0%, #40acc6 100%);
+  background-image: linear-gradient(to bottom, #5ac1da 0%, #40acc6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5ac1da', endColorstr='#ff40acc6', GradientType=0);
+}
+.waf-theme.wakanda_mobile ::-webkit-input-placeholder {
+  color: #cfcfcf;
+}
+.waf-theme.wakanda_mobile ::-moz-placeholder {
+  color: #cfcfcf;
+}
+.waf-theme.wakanda_mobile :-ms-input-placeholder {
+  color: #cfcfcf;
+}
+.waf-theme.wakanda_mobile input:-moz-placeholder {
+  color: #cfcfcf;
+}
+.waf-theme.wakanda_mobile table {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  font-size: 12px;
+}
+.waf-theme.wakanda_mobile table th,
+.waf-theme.wakanda_mobile table td {
+  padding: 12px;
+  border-width: 1px;
+}
+.waf-theme.wakanda_mobile table thead th,
+.waf-theme.wakanda_mobile table thead td {
+  background-color: #979797;
+  color: #ffffff;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+  outline: 1px solid #777777;
+  border-bottom-width: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.waf-theme.wakanda_mobile table tfoot th,
+.waf-theme.wakanda_mobile table tfoot td {
+  background-color: #979797;
+  color: #ffffff;
+  outline: 1px solid #777777;
+  border-bottom-width: 0;
+}
+.waf-theme.wakanda_mobile table tbody th {
+  background-color: #979797;
+  color: #ffffff;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+  outline: 1px solid #777777;
+  border-bottom-width: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.waf-theme.wakanda_mobile table thead th,
+.waf-theme.wakanda_mobile table thead td,
+.waf-theme.wakanda_mobile table tfoot th,
+.waf-theme.wakanda_mobile table tfoot td,
+.waf-theme.wakanda_mobile table tbody th {
+  border-color: #777777;
+}
+.waf-theme.wakanda_mobile table tbody td {
+  border-width: 1px 0 0 0;
+}
+.waf-theme.wakanda_mobile table thead th,
+.waf-theme.wakanda_mobile table thead td {
+  outline: none;
+  border-bottom-width: 1px;
+}
+.waf-theme.wakanda_mobile table tfoot th,
+.waf-theme.wakanda_mobile table tfoot td {
+  outline: none;
+  border-bottom-width: 1px;
+}
+.waf-theme.wakanda_mobile table tbody th {
+  outline: none;
+  border-bottom-width: 1px;
+}
+.waf-theme.wakanda_mobile .waf-skin-box {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-skin-header {
+  background-color: #979797;
+  color: #ffffff;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+  outline: 1px solid #777777;
+  border-bottom-width: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.waf-theme.wakanda_mobile .waf-skin-footer {
+  background-color: #979797;
+  color: #ffffff;
+  outline: 1px solid #777777;
+  border-bottom-width: 0;
+}
+/**
+ * -------------------------------------------------------
+ * @section navBar
+ * @section tabBar
+ * -------------------------------------------------------
+ */
+.waf-theme.wakanda_mobile .waf-skin-navBar {
+  list-style: none;
+}
+.waf-theme.wakanda_mobile .waf-skin-navBar li {
+  display: block;
+}
+.waf-theme.wakanda_mobile .waf-skin-tabBar {
+  list-style: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #777777;
+  border-radius: 3px;
+  background-color: #979797;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+}
+.waf-theme.wakanda_mobile .waf-skin-tabBar::before,
+.waf-theme.wakanda_mobile .waf-skin-tabBar::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.waf-theme.wakanda_mobile .waf-skin-tabBar li {
+  display: block;
+  float: left;
+  padding: 14px;
+  border-width: 0;
+  border-style: solid;
+  border-color: #777777;
+}
+.waf-theme.wakanda_mobile .waf-skin-tabBar li.waf-state-selected {
+  border-width: 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2) inset;
+}
+/**
+ * Context, Effect & Behaviour
+ *
+ */
+/**
+ * -------------------------------------------------------
+ * @section Inset
+ * -------------------------------------------------------
+ */
+/** 
+ * Widget ListView
+ *
+ */
+.waf-theme.wakanda_mobile .waf-wlistview {
+  list-style: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+}
+.waf-theme.wakanda_mobile .waf-wlistview li {
+  height: 120px;
+  padding: 15px;
+  border-width: 1px 0 0 0;
+  background-color: #ffffff;
+}
+.waf-theme.wakanda_mobile .waf-wlistview li:first-of-type {
+  border-top-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-wlistview li:last-of-type {
+  border-bottom-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-wlistview li .content {
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 1px 0 3px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition-property: left;
+  -moz-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.waf-theme.wakanda_mobile .waf-wlistview li.swyped-content {
+  background-color: #e6e6e6;
+  background-image: none;
+}
+.waf-theme.wakanda_mobile .waf-wlistview img {
+  width: 90px;
+  height: 90px;
+  margin-right: 15px;
+}
+.waf-theme.wakanda_mobile .waf-wlistview h1,
+.waf-theme.wakanda_mobile .waf-wlistview h2,
+.waf-theme.wakanda_mobile .waf-wlistview h3,
+.waf-theme.wakanda_mobile .waf-wlistview h4,
+.waf-theme.wakanda_mobile .waf-wlistview h5,
+.waf-theme.wakanda_mobile .waf-wlistview h6 {
+  margin-top: 11px;
+  height: 33px;
+  line-height: 33px;
+}
+.waf-theme.wakanda_mobile .waf-wlistview p {
+  height: 33px;
+  line-height: 33px;
+}
+.waf-theme.wakanda_mobile .waf-wlistview.waf-tpl-alignTop h1,
+.waf-theme.wakanda_mobile .waf-wlistview.waf-tpl-alignTop h2,
+.waf-theme.wakanda_mobile .waf-wlistview.waf-tpl-alignTop h3,
+.waf-theme.wakanda_mobile .waf-wlistview.waf-tpl-alignTop h4,
+.waf-theme.wakanda_mobile .waf-wlistview.waf-tpl-alignTop h5,
+.waf-theme.wakanda_mobile .waf-wlistview.waf-tpl-alignTop h6 {
+  margin-top: 0;
+  line-height: 1;
+  height: auto;
+  max-height: 45px;
+}
+.waf-theme.wakanda_mobile .waf-listView .waf-list-row:first-child {
+  border-top-width: 0;
+}
+.waf-theme.wakanda_mobile .waf-listView .waf-list-row.waf-state-selected {
+  background-color: #e6e6e6;
+}
+.waf-theme.wakanda_mobile .waf-listView .waf-list-row .waf-list-buttonGoTo {
+  background: none;
+  background-size: 12px 19px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(images/listview-goTo.png);
+}
