@@ -36,7 +36,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	messageInput.keydown = function messageInput_keydown (event)// @startlock
 	{// @endlock
-		if (event.keycode == 13){
+		if (event.keycode = 13){
 			ws.send(JSON.stringify({
 				username: username,
 				type: "message",
