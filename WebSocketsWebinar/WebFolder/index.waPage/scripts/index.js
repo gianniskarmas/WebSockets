@@ -67,9 +67,9 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	changeUsernameButton.click = function changeUsernameButton_click (event)// @startlock
 	{// @endlock
-		username = $$('usernameInput').getValue();
+		usernameChange = $$('usernameInput').getValue();
 		ws.send(JSON.stringify({
-			username: username,
+			username: usernameChange,
 			type: 'updateUsername'
 		}));
 	};// @lock
